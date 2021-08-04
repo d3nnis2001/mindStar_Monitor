@@ -84,9 +84,9 @@ async function monitor()
                             
                                 const options = {
                                     from: `${process.env.EMAIL}`,
-                                    to: "schennis.dielke@gmail.com",
-                                    subject: "Ein neues Produkt wurde hinzugefügt!",
-                                    text: `Das Produkt: ${dataMindstarName[i].innerText.toLowerCase()} ist nun für den Preis von ${dataMindstarPrice[i].innerText.toLowerCase()} verfügbar!`
+                                    to: "receiver@gmail.com", //Paste in the receivers of the email
+                                    subject: "A new product has been added!",
+                                    text: `The product: ${dataMindstarName[i].innerText.toLowerCase()} is now available for the price of ${dataMindstarPrice[i].innerText.toLowerCase()} !`
                                 };
                             
                                 transporting.sendMail(options, function (err, info){
